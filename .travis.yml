@@ -1,0 +1,18 @@
+language: go
+go:
+  - "1.11.x"
+env:
+  - GO111MODULE=on
+
+# Override the base install phase so that the project can be installed using
+# `-mod=vendor` to use vendored dependencies
+install:
+  # Install GolangCI
+  - curl -sfL https://install.goreleaser.com/github.com/golangci/golangci-lint.sh | sh -s -- -b $(go env GOPATH)/bin v1.15.0
+  - go install -mod=vendor -v -race ./...
+
+script:
+  # Vet source code
+  - golangci-lint run
+  # Run unit tests with the race detector enabled
+  - go test -mod=vendor -v -race ./...
