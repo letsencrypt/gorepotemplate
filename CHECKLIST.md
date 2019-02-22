@@ -16,12 +16,13 @@
 - [ ] Mark the checklist complete script executable (`chmod +x checklist.complete.sh`)
 - [ ] Run `./checklist.complete.sh`
 
-# Enabling Travis Enabling CI:
+# Enabling Travis CI:
 
-Visit https://travis-ci.org/ (not `.com`, the letsencrypt org is still on the legacy Travis)
-Under https://travis-ci.org/account/repositories click the Let's Encrypt
-organization and then enable the new repository in "Legacy Services Integration"
-(You may have to click "sync account" if the repo was created recently).
+Visit https://travis-ci.org/ (not `.com`, the letsencrypt org is still on the
+legacy Travis). Under https://travis-ci.org/account/repositories click the Let's
+Encrypt organization and then enable the new repository in "Legacy Services
+Integration". You may have to click "sync account" if the repo was created
+recently.
 
 Under the project settings
 `https://travis-ci.org/letsencrypt/<projectname>/settings` you may want to
