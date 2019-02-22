@@ -8,7 +8,7 @@ linters-settings:
 
 linters:
   enable-all: true
-  disabled:
+  disable:
     - golint
     - stylecheck
     - gosec
