@@ -1,4 +1,4 @@
-// gorepotemplate is a package providing nothing but an example function and
+// Package gorepotemplate provides nothing but an example function and
 // a unit test.
 package gorepotemplate
 
