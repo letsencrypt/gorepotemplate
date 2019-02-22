@@ -18,7 +18,7 @@ install:
   - go install -mod=vendor -v -race ./...
 
 script:
-  # Vet source code using the linter config (see .golang-ci.yml)
+  # Vet Go source code using the linter config (see .golang-ci.yml)
   - golangci-lint run
   # Run project unit tests (with the race detector enabled and atomic coverage
   # profile collection)
