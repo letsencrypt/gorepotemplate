@@ -9,7 +9,6 @@ linters-settings:
 linters:
   enable-all: true
   disable:
-    - golint
     - stylecheck
     - gosec
     - dupl
