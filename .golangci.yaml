@@ -2,7 +2,7 @@ linters-settings:
   gocyclo:
     min-complexity: 25
   govet:
-    check-shadowing: true
+    check-shadowing: false
   misspell:
     locale: "US"
 
