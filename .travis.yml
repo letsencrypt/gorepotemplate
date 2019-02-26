@@ -18,6 +18,9 @@ install:
   - go install -mod=vendor -v -race ./...
 
 script:
+  # Download module deps - this _shouldn't_ be required but without it `golangci-lint` seems to fail in Travis.
+  # TODO(@cpu): Figure out a way to remove this hacky workaround to speed up CI.
+  - go mod download
   # Vet Go source code using the linter config (see .golang-ci.yml)
   - golangci-lint run
   # Run project unit tests (with the race detector enabled and atomic coverage
