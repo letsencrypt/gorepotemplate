@@ -29,15 +29,6 @@ Under the project settings
 enable a "cron jobs" build of master on a daily interval that always runs. This
 helps prevent bitrot when there are not many new commits.
 
-## Enabling GolangCI (optional)
-
-1. Log in with github to https://golangci.com/
-1. Visit https://golangci.com/repos/github
-1. Add the project repo.
-1. You may want to ensure the Golang CI status check isn't required to merge
-   PRs. The `.travis.yml` that comes in this repo already runs `golangci-lint`
-   in Travis and so the Github integration is a nice-to-have.
-
 ## Enable Coveralls:
 
 1. Log in with github to https://coveralls.io/
