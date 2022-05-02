@@ -1,5 +1,13 @@
 # gorepotemplate
 
-[![Build Status](https://travis-ci.org/letsencrypt/gorepotemplate.svg?branch=master)](https://travis-ci.org/letsencrypt/gorepotemplate)
-[![Coverage Status](https://coveralls.io/repos/github/letsencrypt/gorepotemplate/badge.svg)](https://coveralls.io/github/letsencrypt/gorepotemplate)
-[![Go Report Card](https://goreportcard.com/badge/github.com/letsencrypt/gorepotemplate)](https://goreportcard.com/report/github.com/letsencrypt/gorepotemplate)
+[![Build Status](https://github.com/letsencrypt/gorepotemplate/actions/workflows/test.yml/badge.svg?branch=main)](https://github.com/letsencrypt/gorepotemplate/actions/workflows/test.yml?query=branch%3Amain)
+
+A short description of the project goes here.
+
+## Usage
+
+How to use the project, whether in source or binary form.
+
+## Contributing
+
+How to set up a development environment, make changes, and run tests.
