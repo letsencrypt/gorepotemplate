@@ -22,6 +22,7 @@ linters:
     - testpackage
     - paralleltest
     - nlreturn
+    - perfsprint
     # These are deprecated
     - execinquery
     - exportloopref
