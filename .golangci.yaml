@@ -18,6 +18,10 @@ linters:
     - gocritic
     - gochecknoinits
     - gochecknoglobals
+    - exhaustruct
+    - testpackage
+    - paralleltest
+    - nlreturn
     # These are deprecated
     - execinquery
     - exportloopref
