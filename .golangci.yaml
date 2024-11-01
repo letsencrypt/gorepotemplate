@@ -12,12 +12,18 @@ linters:
     - stylecheck
     - gosec
     - dupl
-    - maligned
     - depguard
     - lll
     - prealloc
-    - scopelint
     - gocritic
     - gochecknoinits
     - gochecknoglobals
-    - typecheck # Go 1.13 incompatible pending new golangci-lint binary release
+    - exhaustruct
+    - testpackage
+    - paralleltest
+    - nlreturn
+    - perfsprint
+    # These are deprecated
+    - execinquery
+    - exportloopref
+    - gomnd
