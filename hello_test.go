@@ -4,6 +4,8 @@ import "testing"
 
 // TestHello tests that the Hello function produces the expected greeting.
 func TestHello(t *testing.T) {
+	t.Parallel()
+
 	testCases := []struct {
 		TestCaseName     string
 		Name             string
@@ -32,6 +34,8 @@ func TestHello(t *testing.T) {
 
 	for _, tc := range testCases {
 		t.Run(tc.TestCaseName, func(t *testing.T) {
+			t.Parallel()
+
 			if greeting := Hello(tc.Name); greeting != tc.ExpectedGreeting {
 				t.Errorf("hello(%q) returned %q not %q",
 					tc.Name, greeting, tc.ExpectedGreeting)
